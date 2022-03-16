@@ -29,6 +29,8 @@ export default {
     <template #toolbar>
       <div id="custom-toolbar">
         <button class="ql-bold"></button>
+        <button class="ql-italic"></button>
+        <button class="ql-image"></button>
 
       </div>
     </template>
