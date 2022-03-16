@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@vueup/vue-quill": "^1.0.0-beta.8",
+    "quill-blot-formatter": "^1.0.5",
     "vue": "^3.2.25"
   },
   "devDependencies": {

@@ -1,13 +1,21 @@
 <script>
 import { ref, reactive } from 'vue';
 import { QuillEditor } from '@vueup/vue-quill';
+import BlotFormatter from 'quill-blot-formatter';
 import '@vueup/vue-quill/dist/vue-quill.snow.css';
 export default {
     components: {
         QuillEditor,
     },
     setup() {
-        return {};
+        const modules = {
+            name: 'blotFormatter',
+            module: BlotFormatter,
+            options: {
+                /* options */
+            },
+        };
+        return { modules };
     },
 };
 </script>
@@ -16,6 +24,7 @@ export default {
   <QuillEditor
     theme="snow"
     toolbar="#custom-toolbar"
+    :modules="modules"
   >
     <template #toolbar>
       <div id="custom-toolbar">
